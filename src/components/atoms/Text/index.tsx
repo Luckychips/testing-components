@@ -1,9 +1,7 @@
-interface Props {
-    title?: string;
-}
+interface Props extends BaseComponent {}
 
-const Text = ({ title = '' }: Props) => {
-    return <div data-testid="basic-text-component">{title}</div>;
+const Text = ({ children }: Props) => {
+    return <div data-testid="basic-text-component">{children}</div>;
 };
 
 export default Text;

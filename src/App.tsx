@@ -1,11 +1,14 @@
-import { FormInput, Text } from '@/components/atoms';
+import { FormInput, SimpleButton, Text } from '@/components/atoms';
 import './App.css';
 
 function App() {
     return (
         <main>
             <FormInput label="First Name" name="field-first-name" />
-            <Text title="title" />
+            <SimpleButton onClick={() => console.log('clicked!')}>
+                <span>simple button!</span>
+            </SimpleButton>
+            <Text>greeting</Text>
         </main>
     );
 }
