@@ -2,9 +2,9 @@ interface Props extends BaseComponent {
     onClick: () => void;
 }
 
-const SimpleButton = ({ children, onClick }: Props) => {
+const SimpleButton = ({ dataTestId = 'component-simple-button', children, onClick }: Props) => {
     return (
-        <button data-testid="component-simple-button" onClick={() => onClick()}>{children}</button>
+        <button data-testid={dataTestId} onClick={() => onClick()}>{children}</button>
     );
 };
 
