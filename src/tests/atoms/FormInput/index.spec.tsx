@@ -10,7 +10,7 @@ const setup = () => {
         ...component,
         input,
     };
-}
+};
 
 describe('FormInput', async () => {
     it('loaded', () => {
@@ -22,5 +22,14 @@ describe('FormInput', async () => {
         const { input } = setup();
         fireEvent.change(input, { target: { value: 'greeting' } });
         expect(input.value).toBe('greeting');
+    });
+
+    it('focus & blur input', () => {
+        const { input } = setup();
+        fireEvent.focus(input);
+        fireEvent.change(input, { target: { value: 'greeting' } });
+        expect(input.value).toBe('greeting');
+        fireEvent.blur(input);
+        expect(input.value).toBe('');
     });
 });

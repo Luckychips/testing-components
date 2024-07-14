@@ -9,8 +9,8 @@ const setup = () => {
     return {
         ...component,
         text,
-    }
-}
+    };
+};
 
 describe('Text', () => {
     it('loaded', () => {

@@ -4,7 +4,9 @@ interface Props extends BaseComponent {
 
 const SimpleButton = ({ dataTestId = 'component-simple-button', children, onClick }: Props) => {
     return (
-        <button data-testid={dataTestId} onClick={() => onClick()}>{children}</button>
+        <button data-testid={dataTestId} onClick={() => onClick()}>
+            {children}
+        </button>
     );
 };
 

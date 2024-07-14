@@ -10,8 +10,8 @@ const setup = () => {
         ...component,
         onClick,
         button,
-    }
-}
+    };
+};
 
 describe('Text', () => {
     it('loaded', () => {

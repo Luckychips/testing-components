@@ -1,5 +1,4 @@
 import { FormInput, SimpleButton, Text } from '@/components/atoms';
-import './App.css';
 
 function App() {
     return (
