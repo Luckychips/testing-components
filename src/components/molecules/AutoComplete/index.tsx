@@ -36,7 +36,7 @@ const AutoComplete = () => {
                 setValue={(v: string) => setSearchText(v)}
             />
             {optionList.length > 0 && searchText && (
-                <S.OptionListContainer>
+                <S.OptionListContainer data-testid="search-option-list">
                     {optionList.map((option) => (
                         <S.Option
                             key={`option-item-${option.value}`}

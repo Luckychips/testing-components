@@ -13,7 +13,7 @@ const setup = () => {
     };
 };
 
-describe('Text', () => {
+describe('SimpleButton', () => {
     it('loaded', () => {
         setup();
         expect(true).toBeTruthy();
