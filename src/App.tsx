@@ -1,13 +1,14 @@
 import { FormInput, SimpleButton, Text } from '@/components/atoms';
+import { AutoComplete } from '@/components/molecules';
 
 function App() {
     return (
         <main>
-            <FormInput label="First Name" name="field-first-name" />
             <SimpleButton onClick={() => console.log('clicked!')}>
                 <span>simple button!</span>
             </SimpleButton>
             <Text>greeting</Text>
+            <AutoComplete />
         </main>
     );
 }
