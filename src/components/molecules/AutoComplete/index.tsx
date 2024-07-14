@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { FormInput } from '@/components/atoms';
 import * as S from './styles';
 
@@ -7,9 +8,15 @@ interface OptionItem {
 }
 
 const AutoComplete = () => {
+    const [searchText, setSearchText] = useState('');
+
     return (
         <S.Container>
-            <FormInput />
+            <FormInput
+                name="input-auto-complete"
+                value={searchText}
+                setValue={(v: string) => setSearchText(v)}
+            />
         </S.Container>
     );
 };

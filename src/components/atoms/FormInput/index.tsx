@@ -1,13 +1,14 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import * as S from './styles';
 
 interface Props {
-    label: string;
+    label?: string;
     name: string;
+    value: string;
+    setValue: (value: string) => void;
 }
 
-const FormInput = ({ label, name }: Props) => {
-    const [value, setValue] = useState('');
+const FormInput = ({ label, name, value, setValue }: Props) => {
     const [hasFocus, setHasFocus] = useState(false);
 
     useEffect(() => {
@@ -18,9 +19,11 @@ const FormInput = ({ label, name }: Props) => {
 
     return (
         <S.Container>
-            <S.PlaceholderLabel htmlFor={name} className={hasFocus ? 'focused-input' : ''}>
-                {label}
-            </S.PlaceholderLabel>
+            {label && (
+                <S.PlaceholderLabel htmlFor={name} className={hasFocus ? 'focused-input' : ''}>
+                    {label}
+                </S.PlaceholderLabel>
+            )}
             <S.TextInput
                 data-testid={name}
                 name={name}
