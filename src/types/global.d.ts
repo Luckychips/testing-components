@@ -1,4 +1,4 @@
 interface BaseComponent {
     dataTestId?: string;
-    children?: React.ReactNode;
+    children?: React.ReactNode | string;
 }
