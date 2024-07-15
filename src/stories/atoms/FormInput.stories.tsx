@@ -12,7 +12,7 @@ const meta = {
         label: 'Field',
         name: 'name-fleld',
         value: inputValue,
-        setValue: (v: string) => inputValue = v,
+        setValue: (v: string) => (inputValue = v),
     },
 } satisfies Meta<typeof FormInput>;
 
