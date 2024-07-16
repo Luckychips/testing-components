@@ -15,7 +15,7 @@ const Header = ({
 }: Props) => {
     return (
         <S.Container>
-            <S.Logo data-testid="header-logo">Logo</S.Logo>
+            <S.Logo data-testid="header-logo">TODD</S.Logo>
             <S.IconContainer data-testid="header-icon-container">
                 {isVisibleSearch && (
                     <S.IconSearch onClick={() => onClickSearch && onClickSearch()}>SE</S.IconSearch>
