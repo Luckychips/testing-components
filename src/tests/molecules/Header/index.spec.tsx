@@ -9,7 +9,7 @@ const setup = () => {
         ...component,
         iconContainer,
     };
-}
+};
 
 describe('Header', () => {
     it('loaded', () => {
