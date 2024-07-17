@@ -9,7 +9,12 @@ interface Props {
 }
 
 const Chevron = ({ direction = 'right', size = 'small' }: Props) => {
-    return <S.Container className={`${direction} ${size}`} />;
+    return (
+        <S.Container
+            data-testid={`component-chevron-${size}-${direction}`}
+            className={`${direction} ${size}`}
+        />
+    );
 };
 
 export default Chevron;

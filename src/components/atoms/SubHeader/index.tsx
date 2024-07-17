@@ -5,11 +5,7 @@ interface Props extends BaseComponent {
     onClick?: () => void;
 }
 
-const SubHeader = ({
-    dataTestId = 'component-sub-header',
-    children,
-    onClick,
-}: Props) => {
+const SubHeader = ({ dataTestId = 'component-sub-header', children, onClick }: Props) => {
     return (
         <S.Container data-testid={dataTestId}>
             {children}
