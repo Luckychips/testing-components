@@ -7,7 +7,7 @@ const setup = () => {
     const component = render(
         <SubHeader onClick={() => onClick()}>
             <span>greeting</span>
-        </SubHeader>
+        </SubHeader>,
     );
     const header = screen.getByTestId('component-sub-header');
     return {
