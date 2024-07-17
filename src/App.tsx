@@ -1,6 +1,6 @@
 import { SimpleButton, Text } from '@/components/atoms';
 import { AutoComplete, Header } from '@/components/molecules';
-import { SubHeader } from './components/atoms.ts';
+import { SubHeader } from './components/atoms';
 
 function App() {
     return (

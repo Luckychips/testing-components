@@ -4,8 +4,8 @@ type Direction = 'up' | 'down' | 'left' | 'right';
 type Size = 'small' | 'large';
 
 interface Props {
-    direction: Direction;
-    size: Size;
+    direction?: Direction;
+    size?: Size;
 }
 
 const Chevron = ({ direction = 'right', size = 'small' }: Props) => {
